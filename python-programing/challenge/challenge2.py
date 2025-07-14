@@ -27,8 +27,13 @@ else:
 number = int(input('enter number to calculate factorial : '))
 factorial=1
 # step 1 : need to get the range like if the number is 4 we need to get 1,2,3,4
-for i  in range(1,number+1):
+# Changed "number <= 0" ➜ "number < 0"
+# Because factorial of 0 is valid and equals 1.
+if number < 0:
+    print('number is invalid for factorial')
+else:    
+  for i  in range(1,number+1):
     # step2 : calculate 1 *2*3*4 is the factorial of 4 
-    factorial *= i
+     factorial *= i
+  print(f'The factorial of {number} is {factorial}')
 
-print(f'The factorial of {number} is {factorial}')
