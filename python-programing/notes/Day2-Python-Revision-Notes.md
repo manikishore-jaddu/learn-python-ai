@@ -72,7 +72,7 @@ print('Multiplication:', a \* b)
 print('Division:', a / b)
 print('Floor Division:', a // b)
 print('Modulo:', a % b)
-print('Power:', a \*\* b)
+print('Power:', a ** b)
 
 # ✅ Assignment Operators
 
@@ -90,7 +90,7 @@ x //= 5
 print('Floor Division Assignment:', x)
 x %= 2
 print('Remainder Assignment:', x)
-x \*\*= 2
+x **= 2
 print('Exponent Assignment:', x)
 
 # ✅ Comparison Operators
