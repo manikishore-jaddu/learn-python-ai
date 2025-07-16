@@ -71,7 +71,7 @@ print('Subtraction:', a - b)
 print('Multiplication:', a \* b)
 print('Division:', a / b)
 print('Floor Division:', a // b)
-print('Modulo:', a % b)
+print('Modulo:', a % b)  //print(10 // 3)   # ➜ 3 (because 10 ÷ 3 = 3.333..., floor is 3)
 print('Power:', a ** b)
 
 # ✅ Assignment Operators

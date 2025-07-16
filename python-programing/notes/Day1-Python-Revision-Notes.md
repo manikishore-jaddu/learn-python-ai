@@ -12,14 +12,13 @@ Reassigning:
 
 name = "python"
 name = "python life"
+
 Assign multiple values:
-
-
 a, b, c = 1, 1.1, "python"
+
 Assign one value to multiple variables:
-
-
 site1 = site2 = "python"
+
 ✅ 3. Variable Naming Rules
 Can contain: a–z, A–Z, 0–9, and _
 
