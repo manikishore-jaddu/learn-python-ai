@@ -30,7 +30,7 @@ print("Reversed string:", reversed_str)
 # A palindrome is a sequence—such as a word, phrase, number, or even an entire sentence—that reads the same forward
 # and backward when you ignore spaces, punctuation, and capitalization.
 
-pallendrome = input("enter a number or a string : ")
+pallendrome = '121'
 inputValue = pallendrome.lower()
 reversed = inputValue[::-1]
 if inputValue == reversed:
@@ -43,7 +43,7 @@ else:
 # You can check if the first and last letters match, then move inward with a loop.
 #  This way, you don’t even need to build a reversed string!
 
-palindrome = input("Enter a number or a string: ")
+palindrome = '121'
 input_value = palindrome.lower()
 is_palindrome = True
 
@@ -69,6 +69,72 @@ else:
 
 # 3. Count Vowels in a String
 # Given a sentence, count and print the number of vowels.
+sentence  =  'i am learning python'
+
+vowels= ['a','e','i','o','u']
+count = 0
+for char in sentence.lower():
+    if char in vowels:
+        count+=1
+
+print(f'Number of vowels: {count}')
+# ===============
+sentence = 'i am learning python'
+vowels = ['a', 'e', 'i', 'o', 'u']
+found_vowels = []
+
+for char in sentence.lower():
+    if char in vowels:
+        found_vowels.append(char)
+
+print(f'Number of vowels: {len(found_vowels)}')
+print(f'Vowels found: {found_vowels}')
+
+
+# =================
+
+
+# step 1 : loop while 
+i =0
+count =0
+while i < len(sentence):
+# step 2 : need to compare the vowels in given string
+    if sentence[i].lower() in vowels:
+        count+=1
+    i+=1
+print(count)       
+
+
+# If You Only Want to Count Unique Vowel Types Present
+# You can use your original logic, but you should fix the loop to include all vowels:
+
+# python
+sentence = 'i am learning python'
+vowels = 'aeiou'
+count = 0
+i = 0
+while i < len(vowels):
+    if vowels[i] in sentence.lower():
+        count += 1
+    i += 1
+print(count)  # This will show how many unique vowels are present
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 4. Capitalize Each Word
 # Take a sentence and print it with every word’s first letter capitalized.
